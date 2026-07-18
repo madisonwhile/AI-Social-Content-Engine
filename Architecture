@@ -1,1 +1,15 @@
+##Overall Workflow
+Same foundation as my E-commerce Engine. However, this engine doesn't create simple e-commerce photoshoots. The user still inputs the same information as my first one, the brand brief, moodboard, products and brand library. Prompts are still the output, but now it provides prompts for short-form videos for me to put into Higgsfield. These can then be used as feed posts, reels, tiktoks, youtube shorts and etc. 
 
+---
+##The Agents
+Agent 1: (Brand and social strategy). Reads the brand brief, moodboard, and existing brand social screenshots. Produces two things: a visual profile (aesthetic, colour, lighting, casting, energy) and a full social content strategy. Acts as a creative director — defines 4–6 specific content formats suited to this brand, per-platform tone differences, hook directions, casting direction, music/audio energy, and what to never do. Explicitly told to push beyond what the brand already does, not replicate it.
+
+Agent 2: (Product Analysis). Analyses each product image and returns the product name, type, and social context — how this product fits naturally into social media moments and lifestyle occasions.
+
+Agent 3A: (Social image prompt writer). Uses the brand strategy and product analysis to write image prompts. Reference photo is provided as image-to-image input so the AI generator locks the product's exact appearance. Focuses entirely on scene, lighting, mood, talent, composition — never redescribes the product itself.
+
+Agent 3B: (Video prompt writer). Same principle as 3A but for video. Instructs the generator to use the product photo as the first frame (image-to-video mode). Includes explicit timing cues for when actions happen within the clip.
+
+---
+##Why Multiple Agents?

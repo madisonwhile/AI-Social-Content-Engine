@@ -13,3 +13,25 @@ Agent 3B: (Video prompt writer). Same principle as 3A but for video. Instructs t
 
 ---
 ##Why Multiple Agents?
+The reasoning behind this decision is pretty much the same reasoning I had with the same decison but for my E-commerce Engine. 
+- By having an agent for each job, results in it being able to completely focus on the one responisbility it is told to perform. 
+- If one agent simply did every job it will produce a poor output, because it would be too overwhelmed and unable to perfect each task. 
+- Each agent is able to produce a sharp and deeply thought through output to then pass onto the next agent. 
+
+---
+##Inputs added vs E-commerce Engine
+1. Platform checkboxes (Tiktok, Instagram, Youtube)
+2. Video format selector (clip/storyboard/both)
+The storyboard option provides:
+- Hook (0-2s) aimed to grab scroller's attention
+- Scene (2-8s) the main visual action
+- Scene 2 (8-15s) the product highlight or key message
+- Close/CTA (last 2s) how it ends
+- Audio direction (music, tempo, energy)
+- Video type (UGC, lifestyle, talking head)
+3. Brand social content folder (examples of their social media presence)
+
+---
+##Outputs
+1. Seperate image and video prompts per product.
+2. Allowed to download prompts as a zip file.

@@ -1,1 +1,2 @@
-
+##Prompt problem's encountered
+Issue 1: Agent described the product in text when a reference image was provided. Had the same issue with my E-commerce Engine, the detialed description of the product collided with product image casuing distortion. I fixed this by telling the agent to NOT describe the product, to rather include that the AI generator should follow the refernce image. 

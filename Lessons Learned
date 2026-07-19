@@ -1,1 +1,15 @@
+##Lessons Learned
+1. The refernce image does the heavy-lifting. From both my E-commerce Engine and this Engine, I learnt that when you give the AI a reference image you must just let that image do its job. When the agents describe the product in text as well, the two inputs compete and the product gets distorted. Less description=more accurate output. 
+2. AI models default to clean, perfect, studio-quality output because that's what training data looks like. You have to actively tell it to be imperfect-specfic lighting, candid moments, lived-in backgrounds. If you don't say it, it won't achieve it. 
+3. Images are static so you can be vague on the composition. Video is time-based - if you don't say when something happens, the model decides and is usually wrong. Time stamps are essential for accuracy.
+4. By testing with brands where I already knew what their content looked like, it made it easier for me to know when the output was wrong and on how to improve it. If I had tested with brands I am unfamiliar with (or if I hadn't studied the brand) then I might have accepted bad results without realising. 
 
+---
+##Bugs Fixed
+JOB NOT FOUND - Railway was running multiple Gunicorn workers; each request could hit a different worker with no memory of the job. It was fixed by Claude Code dropping to 1 worker. 
+"CONNECTION ERROR" on Agent 1- - Turned out being a stale Anthropic API key in Railway
+
+---
+#Creative Lesson
+I realised with this engine, that AI systems need just as much creative direction as us humans do. I made the mistake of not giving the agents enough creative guiding, so when I had Claude Code make sure Agent 1 behaved more as a "creative director" had the outputs become much more unique and appealing. 
+As I have expressed before, AI isnt here to replace creativity-however-it needs genuine concise creative guidelines in order for it to help us execute the outcomes we want in the creative space. Which is exactly what I had done, only then was I happy with the results. 

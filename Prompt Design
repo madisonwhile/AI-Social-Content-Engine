@@ -1,6 +1,8 @@
 ##Prompt problem's encountered
 Issue 1: Agent described the product in text when a reference image was provided. Had the same issue with my E-commerce Engine, the detialed description of the product collided with product image casuing distortion. I fixed this by telling the agent to NOT describe the product, to rather include that the AI generator should follow the refernce image. 
+
 Issue 2: Agent 1 replicated existing brand content instead of being creative. When I gave existing brand social content, it used them as a template instead of a guide.This was fixed by rewriting agent 1's instructions to use existing content to understand the visual language but push beyond it. Essentially, it will come ip with social content as if it were a creative director by pitching new ideas. Even as I still steer and anchor the creative side myself. 
+
 Issue 3: Video prompts produced delayed or missed actions. When a prompt said an action without specifying when, ghe video model would either delay the action or miss it entirely. To solve this, Claude Code added explicit timing instructions to agent 3B rules.
 
 ---

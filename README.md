@@ -87,8 +87,4 @@ Some ideas I'd like to explore in future versions include:
 
 ---
 
-## Screenshots
-
-Project screenshots, workflow diagrams and example outputs can be found in the Assets folder.
-
 > **Note:** Brands shown in this repository (such as Poppi and Aritzia) were used solely as public case studies to evaluate the system's performance. This project is an independent technical exploration and is not affiliated with or endorsed by these brands.
